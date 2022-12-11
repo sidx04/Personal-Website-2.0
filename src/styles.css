@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Revalia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+:root{
+    /* --orange:rgb(235, 180, 0); */
+    --orange:rgb(255, 210, 62);
+    --gray: rgb(151, 151, 151);
+}
+
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Revalia', cursive;
+    font-family: 'Goudy Bookletter 1911', serif;
 }
 
 .container{
@@ -25,8 +32,9 @@
 }
 
 .saluteText{
-    color: rgb(151, 151, 151);
+    color:var(--gray);
     font-size: 46vw;
+    letter-spacing: 2vw;
     cursor: default;
 }
 
@@ -36,13 +44,39 @@
 
 .nameContainer{
     height: 100vh;
-    background-color:rebeccapurple;
+    /* background-color:rebeccapurple; */
 }
 .name{
     font-size: 20vw;
-    color: rgb(151, 151, 151);
+    /* color: rgb(151, 151, 151); */
     text-align: center;
     line-height: 100vh;
-    background-color: blanchedalmond;
-    color: rebeccapurple;
+    /* background-color: var(--orange); */
+    color: #333;
+    opacity: 100%;
+    letter-spacing: 1.6vw;
+}
+
+.titleContainer{
+    height: 100vh;
+}
+
+.dark{
+    background: url("../img/bg1.png");
+}
+
+.blanched{
+    background: var(--orange) url("../img/bg2.png");
+}
+
+.title_dark{
+    font-size: 10vw;
+    color: var(--gray);
+    line-height: 100vh;
+}
+
+.title_blanched{
+    font-size: 10vw;
+    color: #333;
+    line-height: 100vh;
 }
