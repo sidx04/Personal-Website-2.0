@@ -18,6 +18,20 @@
     /* font-family: 'Prompt', sans-serif; */
 }
 
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #111;       /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--orange);    /* color of the scroll thumb */
+    border-radius: 3.5px;       /* roundness of the scroll thumb */
+    border: 2px solid var(--orange);  /* creates padding around scroll thumb */
+  }
+
 .container{
     background-color: rgb(21, 20, 20);
 }
