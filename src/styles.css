@@ -87,11 +87,16 @@
     line-height: 100vh;
 }
 
+a, .textlink{
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+}
+
 .projects{
     display: flex;
     flex-direction: column;
     gap: 30vh;
-    padding: 0 100px;
+    padding: 0 10vh;
 }
 
 .projectsTitle{
@@ -104,7 +109,12 @@
     align-items: center;
     gap:100px;
     height: 100vh;
+    /* padding-bottom: 100px; */
     overflow:hidden;
+}
+
+.project:nth-child(2n){
+    flex-direction: row-reverse;
 }
 
 .phone{
@@ -129,7 +139,7 @@
 }
 
 .phoneApp{
-    width: 100%;
+    width: 102.1%;
 }
 
 .projectDetail{
@@ -141,8 +151,10 @@
 }
 
 .projectTitle{
-    font-size: 7vw;
+    font-size: 6.5vw;
     color: grey;
+    letter-spacing: 1.5px;
+    text-align: left;
 }
 
 .projectDesc{
@@ -150,12 +162,15 @@
     color: #666;
     text-align: justify;
     line-height: 40px;
+    /* word-spacing: 1px; */
+    /* letter-spacing: 1px; */
 }
 
 .projectButton{
-    width: 9rem;
+    width: 10rem;
     height: 4rem;
     padding: 10px 20px;
+    font-size: 18px;
     background-color: transparent;
     border: 3px solid #666;
     border-radius: 7px;
@@ -177,10 +192,58 @@
     align-items: center;
     justify-content: center;
     background-color: gray;
-    color: #333;
+    color: rgb(23, 23, 23);
 
 }
 
 .projectButton:hover.projectButton::after{
     transform: translateX(100%);
+}
+
+.laptop{
+    width: 600px;
+    height: 379px;
+    flex:1;
+    position: relative;
+}
+
+.laptopScreen{
+    width: 451px;
+    height: 286px;
+    position: absolute;
+    top: 18px;
+    left: 68px;
+    overflow: scroll;
+}
+
+.laptopApp{
+    width: 111%;
+
+}
+
+.laptopApp1{
+    width: 103.5%;
+
+}
+.laptopScreen::-webkit-scrollbar {
+    display: none;
+  }
+
+.githubContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.githubTitle{
+    font-size: 100px;
+    color: #666;
+}
+
+.dates{
+    padding: 10px;
+    color: gray;
+    font-size: 10px;
 }
