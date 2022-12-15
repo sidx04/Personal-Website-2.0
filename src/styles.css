@@ -80,3 +80,76 @@
     color: #333;
     line-height: 100vh;
 }
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 30vh;
+    padding: 0 0 10rem;
+}
+
+.projectsTitle{
+    font-size: 11vw;
+    color: var(--gray);
+}
+
+.project{
+    display: flex;
+    align-items: center;
+    gap:100px;
+    height: 100vh;
+    overflow:hidden;
+}
+
+.phone{
+    flex:1;
+    width:300px;
+    height:600px;
+    position: relative;
+}
+
+.phoneScreen{
+    width:264px;
+    height:567px;
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    border-radius: 30px;
+    overflow: scroll;
+}
+
+.phoneScreen::-webkit-scrollbar{
+    display: none;
+}
+
+.phoneApp{
+    width: 100%;
+}
+
+.projectDetail{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.projectTitle{
+    font-size: 7vw;
+    color: grey;
+}
+
+.projectDesc{
+    font-size: 25px;
+    color: #666;
+    text-align: justify;
+    line-height: 40px;
+}
+
+.projectButton{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 3px solid #666;
+    color: #666;
+    cursor: pointer;
+}
