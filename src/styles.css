@@ -7,6 +7,9 @@
     /* --orange:rgb(235, 180, 0); */
     --orange:rgb(255, 210, 62);
     --gray: rgb(151, 151, 151);
+    --darkgreen:rgb(1, 82, 1);
+    --lightgreen:#39d353;
+    --midgreen:#0a7239;
 }
 
 *{
@@ -256,8 +259,45 @@ a, .textlink{
     color: #666;
 }
 
+.githubChart{
+    width: 820px;
+}
+
 .dates{
     padding: 10px;
     color: gray;
     font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.box{
+    width: 15px;
+    height: 15px;
+    background-color: #222;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 3s all cubic-bezier(0.445, 0.05, 0.55, 0.95) ;
+}
+
+.active:nth-child(5n){
+    background-color: var(--darkgreen);
+}
+
+.githubChart:hover .active:nth-child(2n+1){
+    background-color: var(--midgreen);
+}
+
+.githubChart:hover .active:nth-child(2n){
+    background-color: var(--lightgreen);
+}
+
+.githubChart:hover .active:nth-child(4n+1){
+    background-color: var(--darkgreen);
 }
